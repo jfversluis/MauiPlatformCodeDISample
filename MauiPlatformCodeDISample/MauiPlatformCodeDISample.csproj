@@ -53,5 +53,13 @@
 		<OutputType>WinExe</OutputType>
 		<RuntimeIdentifier>win10-x64</RuntimeIdentifier>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <_MauiCompileToAdd Remove="Platforms\Android\DeviceOrientationService.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="Platforms\Android\DeviceOrientationService.cs" />
+	</ItemGroup>
 	
 </Project>

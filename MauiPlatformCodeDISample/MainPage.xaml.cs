@@ -4,9 +4,11 @@ public partial class MainPage : ContentPage
 {
 	int count = 0;
 
-	public MainPage()
+	public MainPage(IDeviceOrientationService service)
 	{
 		InitializeComponent();
+
+		orientationLabel.Text = service.GetOrientation().ToString();
 	}
 
 	private void OnCounterClicked(object sender, EventArgs e)
